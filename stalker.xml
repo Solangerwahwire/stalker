@@ -9,16 +9,36 @@
     <statement name="DO">
       <block type="controls_if" id="140" inline="false">
         <value name="IF0">
-          <block type="logic_compare" id="241" inline="true">
-            <field name="OP">EQ</field>
+          <block type="logic_operation" id="376" inline="true">
+            <field name="OP">LAND</field>
             <value name="A">
-              <block type="sensor_object" id="162">
-                <field name="OBJECT">LEFTFRONT</field>
+              <block type="logic_compare" id="241" inline="true">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="sensor_object" id="162">
+                    <field name="OBJECT">LEFTFRONT</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="256">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="256">
-                <field name="NUM">100</field>
+              <block type="logic_compare" id="377" inline="true">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="sensor_object" id="378">
+                    <field name="OBJECT">RIGHTFRONT</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="379">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
               </block>
             </value>
           </block>
