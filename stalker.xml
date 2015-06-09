@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="602" inline="false" x="809" y="-1106">
+  <block type="controls_whileUntil" id="602" inline="false" x="411" y="-1241">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="648">
@@ -238,23 +238,5 @@
     <next>
       <block type="movement_stop" id="658"></block>
     </next>
-  </block>
-  <block type="math_single" id="550" inline="true" x="0" y="0">
-    <field name="OP">ABS</field>
-    <value name="NUM">
-      <block type="math_arithmetic" id="560" inline="true">
-        <field name="OP">ADD</field>
-        <value name="A">
-          <block type="sensor_object" id="561">
-            <field name="OBJECT">LEFTFRONT</field>
-          </block>
-        </value>
-        <value name="B">
-          <block type="sensor_object" id="562">
-            <field name="OBJECT">RIGHTFRONT</field>
-          </block>
-        </value>
-      </block>
-    </value>
   </block>
 </xml>
