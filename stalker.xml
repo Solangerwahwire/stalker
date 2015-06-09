@@ -176,6 +176,9 @@
         </next>
       </block>
     </statement>
+    <next>
+      <block type="movement_stop" id="658"></block>
+    </next>
   </block>
   <block type="math_single" id="550" inline="true" x="0" y="0">
     <field name="OP">ABS</field>
