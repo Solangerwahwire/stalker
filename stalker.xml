@@ -47,7 +47,7 @@
           <block type="movement_stop" id="172">
             <next>
               <block type="multimedia_playwav" id="191">
-                <field name="WAV">-SndTest</field>
+                <field name="WAV">_SndTest</field>
               </block>
             </next>
           </block>
